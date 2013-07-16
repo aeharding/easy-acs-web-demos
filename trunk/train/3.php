@@ -1,9 +1,10 @@
 <?php
 	session_start();
 	
-	$_SESSION['destination'] = $_POST['destination'];
+	$_SESSION['type'] = $_POST['type'];
 	
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -33,16 +34,17 @@
         <div class="row-fluid">
             <div class="span12 well" style="text-align:center; margin-top:30px;">
                 <div data-ez-chunking="group">
-                    <h3 data-ez-sayafter="...">Destination: <?php echo $_SESSION['destination']; ?></h3>
-                    <h1>Now Choose Ticket Type</h1>
+                    <h3 data-ez-sayafter="..."><?php echo $_SESSION['type'] . ' to ' . $_SESSION['destination']; ?></h3>
+                    <h1>Now Choose Fare Class</h1>
                 </div>
             </div>
         </div>
         <div class="row-fluid" style="margin-bottom:30px;margin-top:30px;">
 			<div class="span6 offset3">
-				<form action="3.php" method="post">
-					<input class="btn btn-large btn-block btn-primary" style="margin-bottom:50px;height:75px;font-size:2em;" type="submit" name="type" value="One Way Fare">
-					<input class="btn btn-large btn-block btn-primary" style="height:75px;font-size:2em;" type="submit" name="type" value="Round Trip Fare">
+				<form action="4.php" method="post">
+					<input class="btn btn-large btn-block btn-primary" style="margin-bottom:50px;height:75px;font-size:2em;" type="submit" name="class" value="Adult Fare">
+					<input class="btn btn-large btn-block btn-primary" style="margin-bottom:50px;height:75px;font-size:2em;" type="submit" name="class" value="Child's Fare (under 16)">
+					<input class="btn btn-large btn-block btn-primary" style="height:75px;font-size:2em;" type="submit" name="class" value="Senior Fare (85 and up)">
 				</form>
             </div>
         </div>
