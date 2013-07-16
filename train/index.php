@@ -1,6 +1,6 @@
 
 <!DOCTYPE html>
-<html lang="en" value="">
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <title>EZ Access Train Demo</title>
