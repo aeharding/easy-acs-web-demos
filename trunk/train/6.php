@@ -17,6 +17,12 @@
     <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
     <![endif]-->
+    
+    <script>
+		setTimeout(function(){
+			document.location.href = '7.php';
+		},3000);
+    </script>
 </head>
 
 <body data-ez>
@@ -24,21 +30,14 @@
 <div id="wrap">
     <div class="container-fluid">
 
-        <div class="row-fluid">
+        <div class="row-fluid" style="margin-bottom:30px;">
             <div class="span12 well" style="text-align:center; margin-top:30px;">
-				<h1>Confirm Credit Card Purchase</h1>
+				<div data-ez-chunking="group">
+					<h1>Processing your purchase.</h1>
+					<h1>Please wait...</h1>
+				</div>
             </div>
         </div>
-        <div class="row-fluid" style="margin-bottom:30px;">
-			<div class="span6 offset3" style="text-align:center;" data-ez-chunking="group">
-				<h2>Your MasterCard account number <br><span data-ez-sayalt="ending in 7777">XXXX_XXXX_XXXX_7777</span> <br>will be charged $3.00 <br>for your ticket.</h2>
-				<h2>Do you agree to this charge?</h2>
-			</div>
-        </div>
-        <div class="row-fluid" style="text-align:center;">
-        <a href="6.php" class="btn btn-large btn-success" style="margin-right:20px" aria-role="button"><i class="icon-ok"></i> Yes, I agree.</a>
-        <a href="reset.php" class="btn btn-large btn-danger" style="margin-left:20px" aria-role="button"><i class="icon-remove"></i> No, cancel purchase.</a>
-		</div>
 
     </div> <!-- /container -->
 
