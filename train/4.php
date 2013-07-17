@@ -1,11 +1,11 @@
 <?php
 
 	// Stop browser warning uder about resubmitted info when pressing 'back' button
-	if($_SERVER['REQUEST_METHOD'] == "POST") header('Location: 3.php');
+	if($_SERVER['REQUEST_METHOD'] == "POST") header('Location: 4.php');
 	
 	session_start();
 	
-	if(isset($_POST['type'])) $_SESSION['type'] = $_POST['type'];
+	if(isset($_POST['fare'])) $_SESSION['fare'] = $_POST['fare'];
 	
 ?>
 
@@ -37,21 +37,43 @@
 
         <div class="row-fluid">
             <div class="span12 well" style="text-align:center; margin-top:30px;">
-                <div data-ez-chunking="group">
-                    <h3 data-ez-sayafter="..."><?php echo $_SESSION['type'] . ' to ' . $_SESSION['destination']; ?></h3>
-                    <h1>Now Choose Fare Class</h1>
-                </div>
+				<h1>Review and Purchase Ticket</h1>
             </div>
         </div>
-        <div class="row-fluid" style="margin-bottom:30px;margin-top:30px;">
-			<div class="span6 offset3">
-				<form action="4.php" method="post">
-					<input class="btn btn-large btn-block btn-primary" style="margin-bottom:50px;height:75px;font-size:2em;" type="submit" name="fare" value="Adult Fare">
-					<input class="btn btn-large btn-block btn-primary" style="margin-bottom:50px;height:75px;font-size:2em;" type="submit" name="fare" value="Child's Fare (under 16)">
-					<input class="btn btn-large btn-block btn-primary" style="height:75px;font-size:2em;" type="submit" name="fare" value="Senior Fare (85 and up)">
-				</form>
-            </div>
+        <div class="row-fluid" style="margin-top:20px;">
+			<div class="span8 offset2">
+				<div class="alert alert-info">
+					<dl class="dl-horizontal" style="font-size: 1.25em;">
+						<dt>Ticket type</dt>
+						<dd><?php echo $_SESSION['type'] . ' ' . $_SESSION['fare']; ?></dd>
+						<dt>From</dt>
+						<dd>Research Park</dd>
+						<dt>To</dt>
+						<dd><?php echo $_SESSION['destination']; ?></dd>
+						<dt>Price</dt>
+						<dd>$3.00</dd>
+					</dl>
+				</div>
+			</div>
         </div>
+        <div class="row-fluid">
+			<div class="span8 offset2">
+				<div class="row-fluid">
+					<div class="span4">
+						<img src="img/insert-card.png" style="width:100%" alt="Insert card">
+					</div>
+					<div class="span8" style="text-align:center">
+						<h4 style="margin-top:75px;">To purchase this ticket, pleast insert and remove your credit card from the slot on your right.</h4>
+						<h6>(For this demo, use the space bar or wait 20 seconds.)</h6>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row-fluid">
+			<div class="span4 offset4">
+				<img src="img/payment.jpg" style="width:100%" alt="Pay with Visa, MasterCard, or Discover">
+			</div>
+		</div>
 
     </div> <!-- /container -->
 
