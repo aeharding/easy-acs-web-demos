@@ -75,14 +75,14 @@
         <div class="row-fluid">
 			<div class="span8 offset2" style="margin-bottom:-20px;">
 				<div class="alert alert-info">
-					<dl class="dl-horizontal" style="font-size: 1.25em;">
-						<dt>Ticket type</dt>
+					<dl class="dl-horizontal" style="font-size: 1.25em;" data-ez-chunking="group">
+						<dt data-ez-sayafter="is a">Ticket type</dt>
 						<dd><?php echo $_SESSION['type'] . ' ' . $_SESSION['fare']; ?> Fare</dd>
-						<dt>From</dt>
+						<dt data-ez-saybefore="departing">From</dt>
 						<dd>Research Park</dd>
-						<dt>To</dt>
+						<dt data-ez-sayalt="and arriving at">To</dt>
 						<dd><?php echo $_SESSION['destination']; ?></dd>
-						<dt>Price</dt>
+						<dt data-ez-saybefore="the final" data-ez-sayafter="is">Price</dt>
 						<dd>$3.00</dd>
 					</dl>
 				</div>
@@ -91,11 +91,11 @@
         <div class="row-fluid">
 			<div class="span8 offset2">
 				<div class="row-fluid">
-					<div class="span4">
+					<div class="span4" data-ez-focusable="false">
 						<img src="img/insert-card.png" style="width:100%" alt="Insert card">
 					</div>
-					<div class="span8" style="text-align:center">
-						<h4 style="margin-top:75px;">To purchase this ticket, please insert and remove your credit card from the slot on your right.</h4>
+					<div class="span8" style="text-align:center;margin-top:75px;" data-ez-chunking="group">
+						<h4>To purchase this ticket, please insert and remove your credit card from the slot on your right.</h4>
 						<h6>(For this demo, use the space bar or wait <span id="countdown">60</span> seconds.)</h6>
 					</div>
 				</div>

@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -27,51 +26,13 @@
 
         <div class="row-fluid">
             <div class="span12 well" style="text-align:center; margin-top:30px;">
-                <div data-ez-chunking="group">
-                <h3 data-ez-sayafter="...">This is Research Park Station</h3>
-                <h1>Please Choose Your Ticket Destination</h1>
-                    </div>
+				<h1>Welcome to the Train Station EZ Access Demo</h1>
             </div>
         </div>
         <div class="row-fluid" style="margin-bottom:30px;margin-top:30px;">
-            <form action="2.php" method="post">
-                <div class="span3">
-                    <input class="btn btn-large btn-block btn-primary" type="submit" name="destination" value="Airport Terminal">
-                    <input class="btn btn-large btn-block btn-primary" type="submit" name="destination" value="Bloomfield Mall">
-                    <input class="btn btn-large btn-block btn-primary" type="submit" name="destination" value="Castle Rock Park">
-                    <input class="btn btn-large btn-block btn-primary" type="submit" name="destination" value="Central Beach">
-                    <input class="btn btn-large btn-block btn-primary" type="submit" name="destination" value="Central Station">
-                    <input class="btn btn-large btn-block btn-primary" type="submit" name="destination" value="Drummond Avenue">
-                    <input class="btn btn-large btn-block btn-primary" type="submit" name="destination" value="Essex Square">
-                </div>
-                <div class="span3">
-                    <input class="btn btn-large btn-block btn-primary" type="submit" name="destination" value="Football Stadium">
-                    <input class="btn btn-large btn-block btn-primary" type="submit" name="destination" value="Forest Hills">
-                    <input class="btn btn-large btn-block btn-primary" type="submit" name="destination" value="Garrick University">
-                    <input class="btn btn-large btn-block btn-primary" type="submit" name="destination" value="Hartford Bus Station">
-                    <input class="btn btn-large btn-block btn-primary" type="submit" name="destination" value="Kendall Avenue">
-                    <input class="btn btn-large btn-block btn-primary" type="submit" name="destination" value="Lakeland Aquarium">
-                    <input class="btn btn-large btn-block btn-primary" type="submit" name="destination" value="Lincoln Park Zoo">
-                </div>
-                <div class="span3">
-                    <input class="btn btn-large btn-block btn-primary" type="submit" name="destination" value="Market Street">
-                    <input class="btn btn-large btn-block btn-primary" type="submit" name="destination" value="Meadowbrook Mall">
-                    <input class="btn btn-large btn-block btn-primary" type="submit" name="destination" value="North Business Park">
-                    <input class="btn btn-large btn-block btn-primary" type="submit" name="destination" value="Oakwood College">
-                    <input class="btn btn-large btn-block btn-primary" type="submit" name="destination" value="Port Stanley">
-                    <input class="btn btn-large btn-block btn-primary" type="submit" name="destination" value="Riverside Park">
-                    <input class="btn btn-large btn-block btn-primary" type="submit" name="destination" value="Science Museum">
-                </div>
-                <div class="span3">
-                    <input class="btn btn-large btn-block btn-primary" type="submit" name="destination" value="Shasta Commons">
-                    <input class="btn btn-large btn-block btn-primary" type="submit" name="destination" value="Suburban Station">
-                    <input class="btn btn-large btn-block btn-primary" type="submit" name="destination" value="Thorndike Avenue">
-                    <input class="btn btn-large btn-block btn-primary" type="submit" name="destination" value="Victoria Theater">
-                    <input class="btn btn-large btn-block btn-primary" type="submit" name="destination" value="Wayne Junction">
-                    <input class="btn btn-large btn-block btn-primary" type="submit" name="destination" value="West River Beach">
-                    <input class="btn btn-large btn-block btn-primary" type="submit" name="destination" value="Westgrove Mall">
-                </div>
-            </form>
+			<div class="span6 offset3">
+					<button onclick="document.location.href='1.php'" class="btn btn-large btn-block btn-info" style="height:75px;font-size:2em;">Start Demo</button>
+            </div>
         </div>
 
     </div> <!-- /container -->
@@ -81,13 +42,9 @@
 </div> <!-- /wrap -->
 
 <div id="footer">
-    <div style="padding-top:30px;">
-        <div class="pull-left" style="margin-left:20%">
-            <button class="btn btn-large btn" style="width:200px" type="button" onclick="history.go(-1);"><i class="icon-chevron-left"></i>&nbsp;&nbsp;&nbsp;Go Back</button>
-        </div>
-        <div class="pull-right" style="margin-right:20%">
-            <a href="reset.php" class="btn btn-large btn-danger" style="display:block;width:160px" aria-role="button"><i class="icon-minus-sign"></i>&nbsp;&nbsp;&nbsp;Cancel</a>
-        </div>
+    <div style="padding-top:30px;text-align:center;">
+        <p>Last Modified: July 16, 2013.</p>
+        <p>&copy; By Alexander Harding at the Trace Research and Development Center, University of Wisconsin-Madison</p>
     </div>
 </div>
 
