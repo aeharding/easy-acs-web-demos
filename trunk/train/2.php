@@ -1,7 +1,11 @@
 <?php
+	
+	// Stop browser warning uder about resubmitted info when pressing 'back' button
+	if($_SERVER['REQUEST_METHOD'] == "POST") header('Location: 2.php');
+	
 	session_start();
 	
-	$_SESSION['destination'] = $_POST['destination'];
+	if(isset($_POST['destination'])) $_SESSION['destination'] = $_POST['destination'];
 	
 ?>
 <!DOCTYPE html>
