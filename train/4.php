@@ -5,7 +5,15 @@
 	
 	session_start();
 	
-	if(isset($_POST['fare'])) $_SESSION['fare'] = $_POST['fare'];
+	if(isset($_POST['fare'])) {
+		$fare = $_POST['fare'];
+		
+		if($fare == 'Adult Fare') $fare = 'Adult';
+		else if($fare == 'Child\'s Fare (under 16)') $fare = 'Child';
+		else if($fare == 'Senior Fare (85 and up)') $fare = 'Senior';
+		
+		$_SESSION['fare'] = $fare;
+	}
 	
 ?>
 
@@ -28,6 +36,30 @@
     <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
     <![endif]-->
+    
+    <script>
+		// Forward user after 20 seconds
+		setTimeout(function(){
+			document.location.href = '5.php';
+		},60000);
+		
+		// Countdown stuff
+		
+		setInterval(function(){		
+			var countdown = document.getElementById('countdown');
+			if(parseFloat(countdown.innerHTML) !== 0)
+				countdown.innerHTML = parseFloat(countdown.innerHTML) - 1;
+		},1000);
+		
+		// Spacebar forward
+		document.onkeydown = function(evt) {
+			evt = evt || window.event;
+			if (evt.keyCode == 32) {
+				document.location.href = '5.php';
+			}
+		};
+	</script>
+	
 </head>
 
 <body data-ez>
@@ -40,12 +72,12 @@
 				<h1>Review and Purchase Ticket</h1>
             </div>
         </div>
-        <div class="row-fluid" style="margin-top:20px;">
-			<div class="span8 offset2">
+        <div class="row-fluid">
+			<div class="span8 offset2" style="margin-bottom:-20px;">
 				<div class="alert alert-info">
 					<dl class="dl-horizontal" style="font-size: 1.25em;">
 						<dt>Ticket type</dt>
-						<dd><?php echo $_SESSION['type'] . ' ' . $_SESSION['fare']; ?></dd>
+						<dd><?php echo $_SESSION['type'] . ' ' . $_SESSION['fare']; ?> Fare</dd>
 						<dt>From</dt>
 						<dd>Research Park</dd>
 						<dt>To</dt>
@@ -63,8 +95,8 @@
 						<img src="img/insert-card.png" style="width:100%" alt="Insert card">
 					</div>
 					<div class="span8" style="text-align:center">
-						<h4 style="margin-top:75px;">To purchase this ticket, pleast insert and remove your credit card from the slot on your right.</h4>
-						<h6>(For this demo, use the space bar or wait 20 seconds.)</h6>
+						<h4 style="margin-top:75px;">To purchase this ticket, please insert and remove your credit card from the slot on your right.</h4>
+						<h6>(For this demo, use the space bar or wait <span id="countdown">60</span> seconds.)</h6>
 					</div>
 				</div>
 			</div>
@@ -84,7 +116,7 @@
 <div id="footer">
     <div style="padding-top:30px;">
         <div class="pull-left" style="margin-left:20%">
-            <button class="btn btn-large btn" style="width:200px" type="button" onclick="history.go(-1);"><i class="icon-chevron-left"></i>&nbsp;&nbsp;&nbsp;Go Back</button>
+            <button class="btn btn-large" style="width:200px" type="button" onclick="history.go(-1);"><i class="icon-chevron-left"></i>&nbsp;&nbsp;&nbsp;Go Back</button>
         </div>
         <div class="pull-right" style="margin-right:20%">
             <a href="reset.php" class="btn btn-large btn-danger" style="display:block;width:160px" aria-role="button"><i class="icon-minus-sign"></i>&nbsp;&nbsp;&nbsp;Cancel</a>
