@@ -1,22 +1,3 @@
-<?php
-
-	// Stop browser warning uder about resubmitted info when pressing 'back' button
-	if($_SERVER['REQUEST_METHOD'] == "POST") header('Location: 3.php');
-	
-	session_start();
-	
-	if(isset($_POST['type'])) {
-		$type = $_POST['type'];
-		
-		if($type == 'One Way Fare') $type = 'One Way';
-		else if($type == 'Round Trip Fare') $type = 'Round Trip';
-		
-		$_SESSION['type'] = $type;
-		
-	}
-	
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -45,21 +26,19 @@
 
         <div class="row-fluid">
             <div class="span12 well" style="text-align:center; margin-top:30px;">
-                <div data-ez-chunking="group">
-                    <h3 data-ez-sayafter="..."><?php echo $_SESSION['type'] . ' to ' . $_SESSION['destination']; ?></h3>
-                    <h1>Now Choose Fare Class</h1>
-                </div>
+				<h1>Confirm Credit Card Purchase</h1>
             </div>
         </div>
-        <div class="row-fluid" style="margin-bottom:30px;margin-top:30px;">
-			<div class="span6 offset3">
-				<form action="4.php" method="post">
-					<input class="btn btn-large btn-block btn-primary" style="margin-bottom:50px;height:75px;font-size:2em;" type="submit" name="fare" value="Adult Fare">
-					<input class="btn btn-large btn-block btn-primary" style="margin-bottom:50px;height:75px;font-size:2em;" type="submit" name="fare" value="Child's Fare (under 16)">
-					<input class="btn btn-large btn-block btn-primary" style="height:75px;font-size:2em;" type="submit" name="fare" value="Senior Fare (85 and up)">
-				</form>
-            </div>
+        <div class="row-fluid" style="margin-bottom:30px;">
+			<div class="span6 offset3" style="text-align:center;">
+				<h2>Your MasterCard account number <br><span data-ez-sayalt="ending in 7777">XXXX_XXXX_XXXX_7777</span> <br>will be charged $3.00 <br>for your ticket.</h2>
+				<h2>Do you agree to this charge?</h2>
+			</div>
         </div>
+        <div class="row-fluid" style="text-align:center;">
+        <a href="6.php" class="btn btn-large btn-success" style="margin-right:20px" aria-role="button"><i class="icon-ok"></i> Yes, I agree.</a>
+        <a href="reset.php" class="btn btn-large btn-danger" style="margin-left:20px" aria-role="button"><i class="icon-remove"></i> No, cancel purchase.</a>
+		</div>
 
     </div> <!-- /container -->
 
