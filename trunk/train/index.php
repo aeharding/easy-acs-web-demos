@@ -19,7 +19,7 @@
     <![endif]-->
 </head>
 
-<body data-ez data-ez-startingmode="ezoff">
+<body data-ez data-ez-start="off" data-ez-reset>
 
 <div id="wrap">
     <div class="container-fluid">
