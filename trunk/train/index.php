@@ -43,7 +43,7 @@
 
 <div id="footer">
     <div style="padding-top:30px;text-align:center;">
-        <p>Last Modified: July 16, 2013.</p>
+        <p>Last Modified: September 17, 2013.</p>
         <p>&copy; By Alexander Harding at the Trace Research and Development Center, University of Wisconsin-Madison</p>
     </div>
 </div>
