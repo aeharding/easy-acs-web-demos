@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Page 1 -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   x="0"
+   y="0"
+   width="814"
+   height="814"
+   version="1.1"
+   style="display: block;margin-left: auto;margin-right: auto;"
+   id="svg2"
+   inkscape:version="0.48.1 "
+   sodipodi:docname="activeAccessibleIcon.svg">
+  <metadata
+     id="metadata31">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>Accessible Icon</dc:title>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Sara Hendren, Brian Glenney</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:description>Available at http://www.accessibleicon.org/</dc:description>
+        <dc:publisher>
+          <cc:Agent>
+            <dc:title>Triangle, Inc.</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+        <cc:license
+           rdf:resource="http://creativecommons.org/licenses/by-nc-sa/3.0/" />
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/licenses/by-nc-sa/3.0/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Notice" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Attribution" />
+        <cc:prohibits
+           rdf:resource="http://creativecommons.org/ns#CommercialUse" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#ShareAlike" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="944"
+     inkscape:window-height="1162"
+     id="namedview29"
+     showgrid="false"
+     inkscape:zoom="0.35749386"
+     inkscape:cx="407"
+     inkscape:cy="407"
+     inkscape:window-x="2326"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg2" />
+  <defs
+     id="defs4">
+    <clipPath
+       id="c0_1">
+      <path
+         d="M0.5,815.5L0.5,0.5L815.5,0.5L815.5,815.5Z"
+         id="path7" />
+    </clipPath>
+    <clipPath
+       id="c1_1">
+      <path
+         d="M0.5,815.5L0.5,0.5L815.5,0.5L815.5,815.5Z"
+         id="path10" />
+    </clipPath>
+    <clipPath
+       id="c2_1">
+      <path
+         d="M0.5,815.5L0.5,0.5L815.5,0.5L815.5,815.5Z"
+         id="path13" />
+    </clipPath>
+  </defs>
+  <path
+     d="M0,0 L0,814 L814,814 L814,0 Z "
+     id="path15"
+     stroke="none"
+     fill="#FFFFFF" />
+  <path
+     fill-rule="evenodd"
+     d="M793,793L22,793L22,22L793,22L793,793Z"
+     fill="#3E59A4"
+     id="path17" />
+  <path
+     fill-rule="evenodd"
+     d="M561,56C576,46,595,40,617,44C631,46,643,52,652,61C666,74,675,92,676,114C677,157,643,191,597,188C575,187,559,177,546,162C538,152,533,142,530,126C525,95,542,69,561,56Z"
+     clip-path="url(#c0_1)"
+     fill="#FFFFFF"
+     id="path19" />
+  <path
+     d="M191,394C219,367,253,346,298,337C301,336,305,336,307,335C310,334,315,326,317,324C351,288,383,249,417,212C397,199,376,188,356,176C331,196,309,218,285,239C274,249,255,259,236,251C219,244,206,228,208,206C209,187,223,177,235,166C260,144,285,121,310,99C318,92,327,83,340,80C341,79,344,80,345,78C345,80,351,78,354,79C366,80,375,87,384,92C430,118,476,144,522,170C530,175,540,181,549,187C558,192,568,196,576,202C592,214,600,242,590,263C585,276,573,286,564,296C543,321,520,346,498,372C544,370,595,366,640,363C646,364,654,362,662,364C684,368,699,387,697,414C691,479,686,549,681,618C679,637,678,650,669,662C658,673,638,682,620,674C604,668,591,654,591,633C592,623,593,612,594,601C597,553,602,500,605,454C588,454,566,456,547,457C564,492,575,545,566,597C557,643,536,681,508,708C489,690,471,671,451,652C466,636,479,615,485,590C491,565,490,540,483,515C463,455,416,413,341,412C322,411,303,417,288,424C272,431,260,439,247,449C228,431,210,412,191,394Z"
+     clip-path="url(#c1_1)"
+     id="path21"
+     fill-rule="evenodd"
+     fill="#FFFFFF" />
+  <path
+     d="M425,675C441,688,455,703,469,718C474,723,480,727,483,732C444,762,391,783,326,779C303,777,281,771,262,764C256,762,251,759,245,756C234,751,222,745,212,737C202,730,193,721,184,713C151,681,125,630,121,572C119,543,123,511,131,486C140,460,153,439,167,419C182,432,195,446,210,460C214,465,220,470,224,475C226,477,222,480,221,482C210,499,202,522,200,548C198,578,207,607,219,628C231,647,248,665,268,678C289,691,315,700,344,700C378,700,404,689,425,675Z"
+     clip-path="url(#c2_1)"
+     id="path23"
+     fill-rule="evenodd"
+     fill="#FFFFFF" />
+  <path
+     d="M0,814 L0,0 L814,0 L814,814 z "
+     id="path25"
+     stroke-linejoin="miter"
+     stroke-linecap="butt"
+     stroke-width="1.0"
+     stroke="#000000"
+     fill="none" />
+  <title
+     id="title27">Accessible Icon</title>
+</svg>

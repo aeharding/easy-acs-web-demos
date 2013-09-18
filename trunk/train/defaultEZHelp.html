@@ -1,0 +1,475 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Default help text layers for EZ Access</title>
+	<meta name="author" content="J. Bern Jordan" />
+	<style type="text/css">
+		body { background-color: #EEE; }
+		section { background-color: #FFF; margin: 1em 3em; }
+		h2 { border-top: 1px solid #000; margin-top: 3em; }
+	</style>
+</head>
+<body>
+<h1 class="instructions">Default help text layers for EZ Access</h1>
+<p class="instructions">This default text was developed at the 
+<a href="http://trace.wisc.edu/">Trace 
+<abbr title="Research and Development">R&amp;D</abbr> Center</a> with 
+user testing on some kiosk prototypes. The default text may be improved
+in some cases by making them more application specific.</p>
+
+<h2 class="instructions">Help Layers for the 8-Button EZ Keypad</h2>
+
+<h3 class="instructions">Generic Help Layers</h3>
+<pre class="instructions">id="keypad8"</pre>
+<div id="keypad8" data-ez-help>
+<p class="instructions">The generic help layers should be provided on 
+the <code>&lt;body&gt;</code> tag as the default help layers for the
+screen.</p>
+<p class="instructions">Ideally, you should create your own first help 
+layer/s for each screen of your application and then follow that with 
+the more generic help. In your HTML for a page, do something like 
+the following:</p>
+
+<pre class="instructions">
+&lt;body data-ez="data-ez"
+  data-ez-help="<var>appHelp.html</var><var>#screenX</var>|
+                <var>defaultEZHelp.html</var>#keypad8"&gt;
+...
+&lt;/body&gt;
+</pre>
+<p class="instructions">Where:</p>
+<ul class="instructions">
+	<li><code><var>appHelp.html</var></code> is the location of your help 
+	file with your application-specific help content.</li>
+	<li><code><var>screenX</var></code> is the <code>id</code> of the 
+	<code>div</code> or other element that contains the help content for 
+	the specific page.</li>
+	<li><code><var>defaultEZHelp.html</var></code> is the location of this 
+	file (with the generic help layers).</li>
+</ul>
+
+<div id="keypad8-notutorial">
+<h4 class="instructions">Layer 1</h4>
+<section>
+	<h1>Quick help on how to use EZ Access:</h1>
+	<p>The EZ Access buttons allow you to hear about the things you can do with 
+	this kiosk and to make choices. Screens on this kiosk may have many items on 
+	them. First, you will move to the item you want with the EZ Up & Down arrows. 
+	Then, you will need to use the EZ Action button to choose that item.</p>
+
+	<p>You will usually start near the top of each screen. The EZ Down arrow 
+	will move you down to the next item. 
+	If you do not want that item, you can use the EZ Down arrow again. 
+	To go up to a previous item, use the EZ Up arrow.</p>
+
+	<p>The round EZ Action button chooses an item. 
+	After moving to the item you want, you will then need to choose that item 
+	by pressing the EZ Action button.</p>
+</section>
+
+<h4 class="instructions">Layer 2</h4>
+<section>
+<h1>How to use EZ Help:</h1>
+
+<p>You can press the diamond-shaped EZ Help button for help at any time 
+while using this kiosk.</p>
+
+<p>Then use the EZ Up and Down arrow buttons to move through the help 
+instructions, and use the round EZ Action button to repeat a help 
+instruction item.</p>
+
+<p>You can also press the EZ Help button twice to stop the speech whenever 
+you are not already in EZ Help.</p>
+</section>
+
+<h4 class="instructions">Layer 3</h4>
+<section>
+<h1>How to use Button Help:</h1>
+
+<p>When Button Help is turned on, the keys, buttons, and on-screen items 
+do nothing except say their name and function. 
+This lets you safely explore and learn about the keyboard keys,
+the EZ Access buttons, and all of the buttons and information items that 
+are shown on the screen.</p>
+
+<p>To use Button Help, hold down the diamond-shaped EZ Help button,
+and then press any other key or button, or touch any item on the screen 
+to learn about it.</p>
+
+<p>Button Help can also be locked on by pressing the EZ Help button 
+five times in a row.</p>
+</section>
+</div> <!-- end 8-button help without tutorial -->
+
+<h4 class="instructions">Layer 4</h4>
+<section>
+	<p>End of quick help for EZ Access.</p>
+
+	<p>You may exit help now by pressing the EZ Help button 
+	or continue to get long, very detailed instructions on using EZ Access.</p>
+</section>
+
+<p class="instructions">Note that this is followed by all of the 
+tutorial layers below...</p>
+
+
+<h3 class="instructions">Tutorial (8-button keypad)</h3>
+<pre class="instructions">id="keypad8-tutorial"</pre>
+<div id="keypad8-tutorial" data-ez-help>
+<p class="instructions">The tutorial should be used on the first screen 
+of an application. This tutorial walks users through how the buttons of
+the 8-button EZ Access keypad are used. Other screens should start with
+the generic help layers.</p>
+
+<p class="instructions">On the first HTML page of your application, the
+code might look like the following:</p>
+
+<pre class="instructions">
+&lt;body data-ez="data-ez"
+  data-ez-help="<var>defaultEZHelp.html</var>#keypad8-tutorial"|
+                <var>appHelp.html</var><var>#screen1</var>"&gt;
+...
+&lt;/body&gt;
+</pre>
+<p class="instructions">Where:</p>
+<ul class="instructions">
+	<li><code><var>defaultEZHelp.html</var></code> is the location of this 
+	file (with the tutorial help layers).</li>
+	<li>(optional) <code><var>appHelp.html</var></code> is the location of your help 
+	file with your application-specific help content.</li>
+	<li>(optional) <code><var>screen1</var></code> is the <code>id</code> of the 
+	<code>div</code> or other element that contains the help content for 
+	the first page.</li>
+	
+</ul>
+
+<h4 class="instructions">Tutorial Layer 1</h4>
+
+<section>
+	<h1>How to use EZ Access</h1>
+	<p>The EZ Access buttons on the keypad allow you to hear about the things 
+	you can do with this kiosk and to make choices. The kiosk will read to you 
+	through headphones when you use EZ Access. It will stop reading to you when 
+	you touch the rest of the screen.</p>
+
+	<p>Screens on this kiosk may have many items on them, such as 
+	words, pictures, buttons, and checkboxes. 
+	You can use the EZ Up &amp; Down buttons to move through these items. 
+	You will then use the round EZ Action button to make choices.</p>
+
+	<p>To learn how to use the EZ Access buttons, let's start with the 
+	EZ Down arrow. The EZ Down arrow is a yellow button at the bottom of the 
+	EZ Access keypad. It is shaped like a triangle with the point down. 
+	Press it now to go to the next help screen.</p>
+</section>
+
+<h4 class="instructions">Tutorial Layer 2</h4>
+<section>
+	<h1>How to find the EZ Access buttons</h1>
+	<p>There are eight EZ Access buttons on the keypad below the screen. 
+	You can use these buttons to operate this kiosk instead of trying to 
+	read, reach, or use the touchscreen.</p>
+
+	<p>Two of the buttons are very important. They are the EZ Down &amp; 
+	EZ Action buttons. The EZ Down arrow is the yellow button at the bottom 
+	of the keypad, which is shaped like a triangle with the point down. 
+	The green EZ Action button is in the lower right corner of the keypad 
+	and is a circle shape.</p>
+
+	<p>Press the EZ Down arrow button now to learn more about these 
+	important buttons.</p>
+</section>
+
+<h4 class="instructions">Tutorial Layer 3</h4>
+<section>
+	<h1>How to use the EZ Access buttons</h1>
+	<p>You will usually start near the top of each screen. 
+	The EZ Down arrow will move you down to the next item. 
+	If you do not want that item, you can use the EZ Down arrow again. 
+	The EZ Down arrow only moves and does not activate items or make any 
+	changes.</p>
+
+	<p>The round EZ Action button is to the right of the EZ Down arrow. 
+	It is used to choose items. After moving to the item you want, you will 
+	then need to choose that item by pressing the EZ Action button. 
+	Because you will start near the top of each screen, to operate this kiosk
+	you will usually arrow down several times and then press EZ Action.</p>
+
+	<p>Press the EZ Down arrow button now to learn more about moving on the 
+	screen.</p>
+</section>
+
+<h4 class="instructions">Tutorial Layer 4</h4>
+<section>
+	<h1>How to move through screens</h1>
+	<p>The EZ Down arrow moves down to the next item on the screen. 
+	The EZ Up arrow is the opposite, and moves up to the previous item 
+	on the screen.</p>
+
+	<p>The EZ Up arrow is just above the EZ Down arrow on the keypad. 
+	If you went past something you wanted when using the EZ Down arrow,
+	you can move back up to it with the EZ Up arrow.</p>
+
+	<p>You can do everything you need to do on this kiosk using three buttons:
+	EZ Up, Down, &amp; Action. To exit help and start using this kiosk, press the 
+	blue, diamond-sharn about the other EZ Access buttons, 
+	press the EZ Down arrow to get to the next help screen.</p>
+</section>
+
+<h4 class="instructions">Tutorial Layer 5</h4>
+<section>
+	<h1>How to use the other EZ Access buttons</h1>
+	<p>Above and to the left of the EZ Up arrow is the Back page button.
+	Above and to the right of the EZ Up arrow is the Next page button.</p>
+
+	<p>The EZ Back &amp; Next buttons are similar to turning pages in a book. 
+	You may wish to go back to a previous screen to make changes or fix a mistake.
+	To go back to a previous screen, press the EZ Back button. 
+	On some screens, you can move forward to the next screen by pressing the 
+	EZ Next button.</p>
+
+	<p>Help is available on every screen. 
+	You can get or exit help at any time by pressing the EZ Help button. 
+	It is the blue button, which is shaped like a diamond and has small 
+	raised dot or bump on it.</p>
+
+	<p>The buttons at the top left and right corners of the keypad can be 
+	used to decrease or increase the headphone volume.</p>
+</section>
+</div> <!-- End tutorial for 8-button keypad -->
+
+</div> 
+
+<p class="instructions">Note that this is the end of the generic
+help for the 8-button keypad, which includes the complete tutorial.</p>
+
+
+
+<h2 class="instructions">Help Layers for the 5-Button EZ Keypad</h2>
+
+<h3 class="instructions">Generic Help Layers</h3>
+<pre class="instructions">id="keypad5"</pre>
+<div id="keypad5" data-ez-help>
+<p class="instructions">The generic help layers should be provided on 
+the <code>&lt;body&gt;</code> tag as the default help layers for the
+screen.</p>
+<p class="instructions">Ideally, you should create your own first help 
+layer/s for each screen of your application and then follow that with 
+the more generic help. In your HTML for a page, do something like 
+the following:</p>
+
+<pre class="instructions">
+&lt;body data-ez="data-ez"
+  data-ez-help="<var>appHelp.html</var><var>#screenX</var>|
+                <var>defaultEZHelp.html</var>#keypad5"&gt;
+...
+&lt;/body&gt;
+</pre>
+<p class="instructions">Where:</p>
+<ul class="instructions">
+	<li><code><var>appHelp.html</var></code> is the location of your help 
+	file with your application-specific help content.</li>
+	<li><code><var>screenX</var></code> is the <code>id</code> of the 
+	<code>div</code> or other element that contains the help content for 
+	the specific page.</li>
+	<li><code><var>defaultEZHelp.html</var></code> is the location of this 
+	file (with the generic help layers).</li>
+</ul>
+
+<div id="keypad5-notutorial">
+<h4 class="instructions">Layer 1</h4>
+<section>
+	<h1>Quick help on how to use EZ Access:</h1>
+	<p>The EZ Access buttons allow you to hear about the things you can do with 
+	this kiosk and to make choices. Screens on this kiosk may have many items on 
+	them. First, you will move to the item you want with the EZ Up & Down arrows. 
+	Then, you will need to use the EZ Action button to choose that item.</p>
+
+	<p>You will usually start near the top of each screen. The EZ Down arrow 
+	will move you down to the next item. 
+	If you do not want that item, you can use the EZ Down arrow again. 
+	To go up to a previous item, use the EZ Up arrow.</p>
+
+	<p>The round EZ Action button chooses an item. 
+	After moving to the item you want, you will then need to choose that item 
+	by pressing the EZ Action button.</p>
+</section>
+
+<h4 class="instructions">Layer 2</h4>
+<section>
+<h1>How to use EZ Help:</h1>
+
+<p>You can press the diamond-shaped EZ Help button for help at any time 
+while using this kiosk.</p>
+
+<p>Then use the EZ Up and Down arrow buttons to move through the help 
+instructions, and use the round EZ Action button to repeat a help 
+instruction item.</p>
+
+<p>You can also press the EZ Help button twice to stop the speech whenever 
+you are not already in EZ Help.</p>
+</section>
+
+<h4 class="instructions">Layer 3</h4>
+<section>
+	<h1>How to use Button Help:</h1>
+	<p>When Button Help is turned on, the keys, buttons, and on-screen items 
+	do nothing except say their name and function. 
+	This lets you safely explore and learn about the keyboard keys,
+	the EZ Access buttons, and all of the buttons and information items that 
+	are shown on the screen.</p>
+
+	<p>To use Button Help, hold down the diamond-shaped EZ Help button,
+	and then press any other key or button, or touch any item on the screen 
+	to learn about it.</p>
+
+	<p>Button Help can also be locked on by pressing the EZ Help button 
+	five times in a row.</p>
+</section>
+</div> <!-- end 5-button help without tutorial -->
+
+<h4 class="instructions">Layer 4</h4>
+<section>
+	<p>End of quick help for EZ Access.</p>
+
+	<p>You may exit help now by pressing the EZ Help button 
+	or continue to get long, very detailed instructions on using EZ Access.</p>
+</section>
+
+
+<p class="instructions">Note that this is followed by all of the 
+tutorial layers below...</p>
+
+
+<h3 class="instructions">Tutorial (5-button keypad)</h3>
+<pre class="instructions">id="keypad5-tutorial"</pre>
+<div id="keypad5-tutorial" data-ez-help>
+<p class="instructions">The tutorial should be used on the first screen 
+of an application. This tutorial walks users through how the buttons of
+the 5-button EZ Access keypad are used. Other screens should start with
+the generic help layers.</p>
+
+<p class="instructions">On the first HTML page of your application, the
+code might look like the following:</p>
+
+<pre class="instructions">
+&lt;body data-ez="data-ez"
+  data-ez-help="<var>defaultEZHelp.html</var>#keypad5-tutorial"|
+                <var>appHelp.html</var><var>#screen1</var>"&gt;
+...
+&lt;/body&gt;
+</pre>
+<p class="instructions">Where:</p>
+<ul class="instructions">
+	<li><code><var>defaultEZHelp.html</var></code> is the location of this 
+	file (with the tutorial help layers).</li>
+	<li>(optional) <code><var>appHelp.html</var></code> is the location of your help 
+	file with your application-specific help content.</li>
+	<li>(optional) <code><var>screen1</var></code> is the <code>id</code> of the 
+	<code>div</code> or other element that contains the help content for 
+	the first page.</li>
+	
+</ul>
+
+<h4 class="instructions">Tutorial Layer 1</h4>
+
+<section>
+	<h1>How to use EZ Access</h1>
+	<p>The EZ Access buttons on the keypad allow you to hear about the things 
+	you can do with this kiosk and to make choices. The kiosk will read to you 
+	through headphones when you use EZ Access. It will stop reading to you when 
+	you touch the rest of the screen.</p>
+
+	<p>Screens on this kiosk may have many items on them, such as 
+	words, pictures, buttons, and checkboxes. 
+	You can use the EZ Up &amp; Down buttons to move through these items. 
+	You will then use the round EZ Action button to make choices.</p>
+
+	<p>To learn how to use the EZ Access buttons, let's start with the 
+	EZ Down arrow. The EZ Down arrow is a yellow button at the bottom of the 
+	EZ Access keypad. It is shaped like a triangle with the point down. 
+	Press it now to go to the next help screen.</p>
+</section>
+
+<h4 class="instructions">Tutorial Layer 2</h4>
+<section>
+	<h1>How to find the EZ Access buttons</h1>
+	<p>There are five EZ Access buttons on the keypad below the screen. 
+	You can use these buttons to operate this kiosk instead of trying to 
+	read, reach, or use the touchscreen.</p>
+
+	<p>Two of the buttons are very important. They are the EZ Down &amp; 
+	EZ Action buttons. The EZ Down arrow is the yellow button at the bottom 
+	of the keypad, which is shaped like a triangle with the point down. 
+	The green EZ Action button is in the lower right corner of the keypad 
+	and is a circle shape.</p>
+
+	<p>Press the EZ Down arrow button now to learn more about these 
+	important buttons.</p>
+</section>
+
+<h4 class="instructions">Tutorial Layer 3</h4>
+<section>
+	<h1>How to use the EZ Access buttons</h1>
+	<p>You will usually start near the top of each screen. 
+	The EZ Down arrow will move you down to the next item. 
+	If you do not want that item, you can use the EZ Down arrow again. 
+	The EZ Down arrow only moves and does not activate items or make any 
+	changes.</p>
+
+	<p>The round EZ Action button is to the right of the EZ Down arrow. 
+	It is used to choose items. After moving to the item you want, you will 
+	then need to choose that item by pressing the EZ Action button. 
+	Because you will start near the top of each screen, to operate this kiosk
+	you will usually arrow down several times and then press EZ Action.</p>
+
+	<p>Press the EZ Down arrow button now to learn more about moving on the 
+	screen.</p>
+</section>
+
+<h4 class="instructions">Tutorial Layer 4</h4>
+<section>
+	<h1>How to move through screens</h1>
+	<p>The EZ Down arrow moves down to the next item on the screen. 
+	The EZ Up arrow is the opposite, and moves up to the previous item 
+	on the screen.</p>
+
+	<p>The EZ Up arrow is just above the EZ Down arrow on the keypad. 
+	If you went past something you wanted when using the EZ Down arrow,
+	you can move back up to it with the EZ Up arrow.</p>
+
+	<p>You can do everything you need to do on this kiosk using three buttons:
+	EZ Up, Down, &amp; Action. To exit help and start using this kiosk, press the 
+	blue, diamond-sharn about the other EZ Access buttons, 
+	press the EZ Down arrow to get to the next help screen.</p>
+</section>
+
+<h4 class="instructions">Tutorial Layer 5</h4>
+<section>
+	<h1>How to use the other EZ Access buttons</h1>
+	<p>Above and to the left of the EZ Up arrow is the Back page button.</p>
+
+	<p>The EZ Back button can be used to go back to a previous screen to make 
+	changes or fix a mistake.</p>
+
+	<p>Help is available on every screen. 
+	You can get or exit help at any time by pressing the EZ Help button. 
+	It is the blue button, which is shaped like a diamond and has small 
+	raised dot or bump on it.</p>
+</section>
+</div> <!-- End tutorial for 5-button keypad -->
+
+</div> 
+
+<p class="instructions">Note that this is the end of the generic
+help for the 5-button keypad, which includes the complete tutorial.</p>
+
+
+<footer>
+<ul>
+	<li>Last updated: <time>2013-09-17</time></li>
+</ul>
+</footer>
+</body>
+</html>
