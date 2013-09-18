@@ -25,7 +25,8 @@
     </script>
 </head>
 
-<body data-ez>
+<body data-ez
+data-ez-help="fareDemoHelp.html#done">
 
 <div id="wrap">
     <div class="container-fluid">
@@ -48,7 +49,7 @@
 <div id="footer">
     <div style="padding-top:30px;">
         <div class="pull-left" style="margin-left:20%">
-            <button class="btn btn-large" style="width:200px" type="button" onclick="history.go(-1);"><i class="icon-chevron-left"></i>&nbsp;&nbsp;&nbsp;Go Back</button>
+            <button class="btn btn-large" style="width:200px" type="button" onclick="history.go(-1);" data-ez-keybinding="back"><i class="icon-chevron-left"></i>&nbsp;&nbsp;&nbsp;Go Back</button>
         </div>
         <div class="pull-right" style="margin-right:20%">
             <a href="reset.php" class="btn btn-large btn-danger" style="display:block;width:160px" aria-role="button"><i class="icon-minus-sign"></i>&nbsp;&nbsp;&nbsp;Cancel</a>

@@ -19,19 +19,20 @@
     <![endif]-->
 </head>
 
-<body data-ez data-ez-start="off" data-ez-reset>
+<body data-ez data-ez-start="off" data-ez-reset
+data-ez-help="defaultEZHelp.html#keypad5-tutorial">
 
 <div id="wrap">
     <div class="container-fluid">
 
         <div class="row-fluid">
             <div class="span12 well" style="text-align:center; margin-top:30px;">
-				<h1>Welcome to the Train Station EZ Access Demo</h1>
+                <h1>Welcome to the Train Station EZ Access Demo</h1>
             </div>
         </div>
         <div class="row-fluid" style="margin-bottom:30px;margin-top:30px;">
-			<div class="span6 offset3">
-					<button onclick="document.location.href='1.php'" class="btn btn-large btn-block btn-info" style="height:75px;font-size:2em;">Start Demo</button>
+            <div class="span6 offset3">
+                <button onclick="document.location.href='1.php'" class="btn btn-large btn-block btn-info" style="height:75px;font-size:2em;">Start Demo</button>
             </div>
         </div>
 
@@ -43,8 +44,8 @@
 
 <div id="footer">
     <div style="padding-top:30px;text-align:center;">
-        <p>Last Modified: September 17, 2013.</p>
-        <p>&copy; By Alexander Harding at the Trace Research and Development Center, University of Wisconsin-Madison</p>
+        <p>Last Modified: September 18, 2013.</p>
+        <p>&copy; 2013 by Alexander Harding at the Trace Research and Development Center, University of Wisconsin-Madison</p>
     </div>
 </div>
 
