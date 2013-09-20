@@ -74,7 +74,7 @@ defaultEZHelp.html#keypad5">
 						<img src="img/insert-card.png" style="width:100%" alt="Insert card">
 					</div>
 					<div class="span8" style="text-align:center;margin-top:75px;">
-						<h4>To purchase this ticket, please insert and remove your credit card from the slot on your right.</h4>
+						<h4 data-ez-sayafter="The card should be inserted with the raised text facing downwards.">To purchase this ticket, please insert and remove your credit card from the slot on your right.</h4>
 						<a href="5.php" class="btn btn-large btn-primary" aria-role="button">Demo: Purchase ticket</a>
 					</div>
 				</div>
