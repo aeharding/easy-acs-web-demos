@@ -24,7 +24,7 @@
 data-ez-help="fareDemoHelp.html#destination|fareDemoHelp.html#endScreenHelp|
 defaultEZHelp.html#keypad5">
 
-<div id="wrap">
+<div id="wrap" style="margin: 0 auto -200px;">
     <div class="container-fluid">
 
         <div class="row-fluid">
@@ -78,11 +78,16 @@ defaultEZHelp.html#keypad5">
 
     </div> <!-- /container -->
 
-    <div id="push" data-ez-focusable="false"></div>
+    <div id="push" style="height:200px"></div>
 
 </div> <!-- /wrap -->
-
-<div id="footer">
+<div style="height:100px">
+    <div class="alert alert-info" style="width:80%;height:60%; margin-left:8%" data-ez-chunking="group">
+        <object data="img/activeAccessibleIcon.svg" style="float:left;margin-right:10px" type="image/svg+xml"></object>
+        <h4 style="text-align:center;">If you have difficulty reading or reaching the touchscreen, you can use EZ Access to operate this kiosk. To learn how to use EZ Access, press the blue, diamond-shaped button on the keypad below this screen.</h4>
+    </div>
+</div>
+<div id="footer" style="height:100px">
     <div style="padding-top:30px;">
         <div class="pull-left" style="margin-left:20%">
             <button class="btn btn-large btn" style="width:200px" type="button" onclick="history.go(-1);" data-ez-keybinding="back"><i class="icon-chevron-left"></i>&nbsp;&nbsp;&nbsp;Go Back</button>

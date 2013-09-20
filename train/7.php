@@ -42,7 +42,7 @@ data-ez-help="fareDemoHelp.html#done">
 
     </div> <!-- /container -->
 
-    <div id="push" data-ez-focusable="false"></div>
+    <div id="push"></div>
 
 </div> <!-- /wrap -->
 
