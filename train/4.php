@@ -36,29 +36,6 @@
     <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
     <![endif]-->
-    
-    <script>
-		// Forward user after 20 seconds
-		setTimeout(function(){
-			document.location.href = '5.php';
-		},60000);
-		
-		// Countdown stuff
-		
-		setInterval(function(){		
-			var countdown = document.getElementById('countdown');
-			if(parseFloat(countdown.innerHTML) !== 0)
-				countdown.innerHTML = parseFloat(countdown.innerHTML) - 1;
-		},1000);
-		
-		// Spacebar forward
-		document.onkeydown = function(evt) {
-			evt = evt || window.event;
-			if (evt.keyCode == 32) {
-				document.location.href = '5.php';
-			}
-		};
-	</script>
 	
 </head>
 
@@ -96,9 +73,9 @@ defaultEZHelp.html#keypad5">
 					<div class="span4" data-ez-focusable="false">
 						<img src="img/insert-card.png" style="width:100%" alt="Insert card">
 					</div>
-					<div class="span8" style="text-align:center;margin-top:75px;" data-ez-chunking="group">
+					<div class="span8" style="text-align:center;margin-top:75px;">
 						<h4>To purchase this ticket, please insert and remove your credit card from the slot on your right.</h4>
-						<h6>(For this demo, use the space bar or wait <span id="countdown">60</span> seconds.)</h6>
+						<a href="5.php" class="btn btn-large btn-primary" aria-role="button">Demo: Purchase ticket</a>
 					</div>
 				</div>
 			</div>
