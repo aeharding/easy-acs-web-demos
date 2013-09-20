@@ -22,7 +22,7 @@
 <body data-ez data-ez-start="off" data-ez-reset
 data-ez-help="defaultEZHelp.html#keypad5-tutorial">
 
-<div id="wrap">
+<div id="wrap" style="margin: 0 auto -200px;">
     <div class="container-fluid">
 
         <div class="row-fluid">
@@ -38,13 +38,18 @@ data-ez-help="defaultEZHelp.html#keypad5-tutorial">
 
     </div> <!-- /container -->
 
-    <div id="push" data-ez-focusable="false"></div>
+    <div id="push" style="height:200px"></div>
 
 </div> <!-- /wrap -->
-
-<div id="footer">
+<div style="height:100px">
+    <div class="alert alert-info" style="width:80%;height:60%; margin-left:8%" data-ez-chunking="group">
+        <object data="img/activeAccessibleIcon.svg" style="float:left;margin-right:10px" type="image/svg+xml"></object>
+        <h4 style="text-align:center;">If you have difficulty reading or reaching the touchscreen, you can use EZ Access to operate this kiosk. To learn how to use EZ Access, press the blue, diamond-shaped button on the keypad below this screen.</h4>
+    </div>
+</div>
+<div id="footer" style="height:100px">
     <div style="padding-top:30px;text-align:center;">
-        <p>Last Modified: September 18, 2013.</p>
+        <p>Last Modified: September 20, 2013.</p>
         <p>&copy; 2013 by Alexander Harding at the Trace Research and Development Center, University of Wisconsin-Madison</p>
     </div>
 </div>

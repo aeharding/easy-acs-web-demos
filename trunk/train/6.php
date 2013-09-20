@@ -43,7 +43,7 @@ defaultEZHelp.html#keypad5">
 
     </div> <!-- /container -->
 
-    <div id="push" data-ez-focusable="false"></div>
+    <div id="push"></div>
 
 </div> <!-- /wrap -->
 

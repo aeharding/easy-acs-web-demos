@@ -2,6 +2,9 @@
 <!-- Page 1 -->
 
 <svg
+    width="60px"
+   height="60px"
+   viewBox="0 0 814 814"
    xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:cc="http://creativecommons.org/ns#"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -11,8 +14,6 @@
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    x="0"
    y="0"
-   width="814"
-   height="814"
    version="1.1"
    style="display: block;margin-left: auto;margin-right: auto;"
    id="svg2"
