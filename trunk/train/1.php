@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -81,12 +80,6 @@ defaultEZHelp.html#keypad5">
     <div id="push" style="height:200px"></div>
 
 </div> <!-- /wrap -->
-<div style="height:100px">
-    <div class="alert alert-info" style="width:80%;height:60%; margin-left:8%" data-ez-chunking="group">
-        <object data="img/activeAccessibleIcon.svg" style="float:left;margin-right:10px" type="image/svg+xml"></object>
-        <h4 style="text-align:center;">If you have difficulty reading or reaching the touchscreen, you can use EZ Access to operate this kiosk. To learn how to use EZ Access, press the blue, diamond-shaped button on the keypad below this screen.</h4>
-    </div>
-</div>
 <div id="footer" style="height:100px">
     <div style="padding-top:30px;">
         <div class="pull-left" style="margin-left:20%">
